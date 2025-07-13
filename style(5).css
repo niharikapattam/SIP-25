@@ -1,0 +1,266 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+}
+
+h2 {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+}
+
+/* ------------------- Section 1: Testimonials ------------------- */
+.testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+}
+
+.testimonial-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+}
+
+.testimonial-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.testimonial-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+}
+
+.testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+}
+
+.stars {
+      color: gold;
+}
+
+.quote {
+      font-style: italic;
+      position: relative;
+      padding-left: 1.5rem;
+}
+
+.quote::before {
+      content: '“';
+      font-size: 2rem;
+      position: absolute;
+      left: 0;
+      top: -10px;
+      color: #ccc;
+}
+
+/* ------------------- Section 2: Footer ------------------- */
+footer {
+      background-color: #222;
+      color: #eee;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+}
+
+.footer-links, .newsletter {
+      flex: 1 1 250px;
+}
+
+.footer-links a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
+}
+
+.footer-links a:hover {
+      color: #fff;
+}
+
+.social-icons {
+      margin-top: 1rem;
+}
+
+.social-icons a {
+      color: #ccc;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+}
+
+.social-icons a:hover {
+      color: #fff;
+}
+
+.newsletter input[type="email"] {
+      padding: 0.5rem;
+      width: 70%;
+      border: none;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+}
+
+.newsletter button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #ff6600;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+}
+
+.newsletter button:hover {
+      background: #e65c00;
+}
+
+/* ------------------- Section 3: Contact Form ------------------- */
+.contact-form {
+      background: white;
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+      margin-bottom: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+      border-color: #0077cc;
+      outline: none;
+}
+
+.contact-form button {
+      padding: 0.75rem 2rem;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      /* transition: background 0.3s; */
+}
+
+.contact-form button:hover {
+      background-color: #005fa3;
+}
+
+/* ------------------- Section 4: Login Page ------------------- */
+.login-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 2rem;
+}
+
+.login-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.login-box h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+}
+
+.login-box input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border 0.3s;
+}
+
+.login-box input:focus {
+      border-color: #667eea;
+      outline: none;
+}
+
+.checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+}
+
+.checkbox-group input {
+      margin-right: 0.5rem;
+}
+
+.login-box button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+}
+
+.login-box button:hover {
+      background: #556cd6;
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 768px) {
+      .testimonials {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+
+      .newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .newsletter button {
+        width: 100%;
+      }
+}

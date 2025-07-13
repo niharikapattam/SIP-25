@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+}
+
+    /* Top Navigation Bar */
+.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: darkgray;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+}
+
+.navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+}
+
+.navbar ul li {
+      position: relative;
+}
+
+.navbar ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease;
+      padding: 0.5rem;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+      color: #00bcd4;
+}
+
+.icons {
+      display: flex;
+      gap: 1rem;
+      margin-left: 1rem;
+}
+
+.icons i {
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+}
+
+.icons i:hover {
+      color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .navbar ul li {
+        width: 100%;
+      }
+
+      .navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 0;
+        border-top: 1px solid #444;
+      }
+
+      .icons {
+        margin-top: 1rem;
+        display:flex;
+      }
+}
+
+/* Dummy Content to Test Scrolling */
+.content {
+      margin-top: 100px;
+      padding: 2rem;
+}
+
+.content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+}
+.social-icons {
+  display: flex;
+  gap: 0; /* remove spacing between icons */
+}
+
+.social-icons {
+  display: flex;
+  gap: 0; /* remove spacing between icons */
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: white;
+  margin: 0 4px;  /* control space if needed */
+  cursor: pointer;
+  transition: color 0.3s;
+  gap:0px;
+}
+
+.social-icons i:hover {
+  color: #e1306c; /* Instagram pink or your choice */
+  gap:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 768px) 
+{
+    .navbar {
+    /* flex-direction: column; */
+    /* margin-bottom:10px;
+   align-items: flex-start; 
+    padding: 10px 20px;
+    text-align:right;
+    }  
+} */ 
+/* .hamburger
+{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+@media (max-width: 768px) 
+{
+    .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    }  
+}
+.nav-links
+{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    text-align:right;
+}
+
+.navbar .nav-links a 
+{
+    padding: 8px 0;
+    width:100%;
+}
+.nav-icons 
+{
+    display: none;
+}
+
+.hamburger
+{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+} */
+/* body
+{
+      margin: 0;
+      font-family: Arial, sans-serif;
+}
+
+.navbar 
+{
+      background-color: darkgray;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* allow wrapping on small screens */
+    
+/* } */
+
+/* .logo 
+{
+      font-size: 20px;
+      font-weight: bold;
+}
+
+.menu 
+{
+      display: flex;
+      gap: 20px;
+}
+.menu a
+{
+      color: white;
+      text-decoration: none;
+}
+
+.menu a:hover 
+{
+      color: lightblue;
+} */
+
+
+/* ✅ Media Query for Mobile */
+/* @media (max-width: 600px) 
+{
+ .navbar 
+ {
+        flex-direction: column;  Stack logo and menu vertically */
+        
+ /* }  
+
+ /* .menu
+ {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-top: 10px;
+ } */
+
+ /* .menu a 
+   {
+        padding: 10px 0;
+    } */
+
+/* .h1{
+    text-align: center;
+    margin-bottom:1000vh;
+} */
+
+
